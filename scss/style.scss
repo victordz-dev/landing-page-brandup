@@ -1,0 +1,302 @@
+$navbar-padding-x: 2.5rem;
+$navbar-padding-y: 1rem;
+$navbar-toggler-focus-width: 2px;
+$navbar-brand-margin-end: 0;
+$btn-color: black;
+$btn-border-radius: 10px;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+//estilos globais
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+      color: white;
+      text-decoration: none;
+}
+
+ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+}
+
+p{
+      margin: 0 !important;
+}
+body{
+      background-color: black;
+      color: white;
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+}
+
+.navbar{
+      background-color: black;
+}
+
+.text-bg-dark{
+      background-color: black !important;
+}
+
+#logo-icon{
+      width: 50px;
+      height: 50px;
+}
+
+#logotipo{
+      display: none;
+}
+
+.nav-items{
+      display: none;
+}
+
+#btn-header-desktop{
+      display: none;
+}
+
+.hero-section{
+      position: relative;
+      background-image: url("../assets/background-image.png");
+      background-repeat: no-repeat;
+      background-size:100% ;
+      background-position:  center;
+      margin-top: 15vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 95vh;
+      overflow: hidden;
+      z-index: -3;
+      h1{
+            margin: 0 3rem;
+            text-align: center;
+            font-size: 5vh;
+            line-height: 5vh;
+      }
+      p{
+            margin: 0 !important;
+            font-size: 3vh;
+            text-align: center;
+            line-height: 3vh;
+      }
+}
+
+.hero-section::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      background-image: url("../assets/background-blur.png");
+      background-size: cover;
+      background-position: center;
+      z-index: -4;
+}
+
+.btn-p-container{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      width: 100%;
+      padding: 30px;
+}
+
+.btn-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+}
+
+#btn-fazer{
+      width: 37vw;
+      min-width: 120px;
+      height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+}
+
+#btn-conta {
+      width: 36vw;
+      min-width: 111px;
+      height: 34px;
+      padding: 0;
+      background-color: white;
+      position: relative;
+      color: white;
+      border: none;
+    }
+    
+#btn-conta::before {
+      content: '';
+      position: absolute;
+      width: 37.5vw;
+      min-width: 120px;
+      height: 38px;
+      background-image: -moz-linear-gradient(to right, #ffffff, #4b4b4b);
+      background-image: linear-gradient(to right, #ffffff, #4b4b4b);
+      left: -2px;
+      top: -2px;
+      border-radius: 10px;
+      z-index: -1;
+    }
+
+.apresentation-section{
+      background-color: white;
+      color: black;
+      padding: 8vw;
+      h2{
+            text-align: center;
+            font-size: 5vh;
+            line-height: 5vh;
+            margin-bottom: 20vh;
+      }
+      h3{
+            font-size: 4vh;
+      }
+      p{
+            font-size: 2.3vh;
+      }
+}
+
+.text-container{
+      display: flex;
+      flex-direction: column;
+}
+
+.container-desafios{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-right: 20vw;
+}
+
+.container-recompensas{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 20vw;
+      text-align: right;
+}
+
+.personalize-section{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 8vw;
+      gap: 20px;
+      align-items: center;
+      h2{
+            text-align: center;
+            font-size: 5vh;
+            line-height: 5vh;
+            margin-bottom: 6vh;
+      }
+      p{
+            font-size: 2.3vh;
+      }
+}
+
+.personalize-section::before{
+      content: '';
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      background-image: url("../assets/background-blur.png");
+      background-size:auto;
+      background-position: center;
+      z-index: -2;
+}
+
+.text-group-apresentation{
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+      padding-right: 20vw;
+}
+
+.information-footer{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 10vw;
+      background-color: black;
+      padding: 20px ;
+}
+
+.contact{
+      font-size: 10px;
+}
+
+.email{
+      font-size: 10px;
+}
+
+.terms{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      font-size: 10px;
+}
+
+.copy{
+      display: flex;
+      justify-content: center;
+      font-size: 10px;
+}
+
+@media screen and (min-width: 780px) {
+
+      #logo-icon{
+            display: none;
+      }
+
+      #logotipo{
+            display: block;
+            width: 150px;
+            height: 50px;
+      }
+
+      .nav-items{
+            display: flex;
+            width: 30%;
+            min-width: 300px;
+            justify-content: space-between;
+      }
+
+      .item-nav{
+            display: flex;
+            align-items: center;
+            height: 2.5rem;
+      }
+
+      #btn-header-desktop{
+            display: block;
+            width: 10rem;
+      }
+ 
+      .navbar-toggler{
+            display: none;
+      }
+      
+}
